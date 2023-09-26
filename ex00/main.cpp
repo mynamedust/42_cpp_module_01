@@ -1,28 +1,14 @@
-#include "Zombie.h"
+#include "Zombie.hpp"
 
-Zombie *newZombie(std::string name) {
-	Zombie *zombie;
-
-	zombie = new Zombie(name);
-	return zombie;
-
-}
-
-void randomChump(std::string name) {
-	Zombie zombie(name);
-
-	zombie.announce();
-}
+Zombie *newZombie(std::string name);
+void randomChump(std::string name);
 
 int main() {
 
-		Zombie *z = newZombie("z");
+		Zombie *z = newZombie("Oromsim");
 		z->announce();
 		delete z;
-		randomChump("Vitalik");
+		randomChump("Vazgen");
 //		system("leaks zombie");
-
-
-
 	return 0;
 }
