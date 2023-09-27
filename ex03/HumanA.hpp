@@ -5,10 +5,10 @@
 
 class HumanA {
 private:
-	Weapon weapon;
-	string name;
+	string _name;
+	Weapon &_weapon;
 public:
-	HumanA(string name, Weapon weapon);
+	HumanA(string name, Weapon &weapon);
 	void attack();
 };
 

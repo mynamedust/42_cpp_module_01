@@ -5,11 +5,12 @@
 
 class HumanB {
 private:
-	string name;
-	Weapon weapon;
+	string _name;
+	Weapon *_weapon;
 public:
+	HumanB(string name);
 	void attack();
-	void setWeapon(Weapon weapon);
+	void setWeapon(Weapon &weapon);
 };
 
 
